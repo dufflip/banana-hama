@@ -1,0 +1,183 @@
+.read-more-link-AU {
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 100;
+}
+.read-more-link-AU p:hover {
+  color: #333;
+}
+/* .inner_section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(180deg, #fff, rgba(0, 0, 0, 1));
+} */
+
+.aboutUs-section-AU h2 {
+  z-index: 3;
+}
+
+.aboutUs-section-AU {
+  z-index: 3;
+}
+
+.header-AU h2 {
+  color: #333;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.banner-AU {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.aboutUs-section-AU img {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  pointer-events: none;
+  content: "";
+  background-image: linear-gradient(to bottom, transparent 80%, white 100%);
+}
+
+.banner-AU .textBox-AU {
+  max-width: 50%;
+  z-index: 2;
+}
+
+.banner-AU .textBox-AU h2 {
+  color: #fff;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.banner-AU .textBox-AU p {
+  color: #fff;
+  font-size: 1.1em;
+  margin: 5px 0 25px;
+}
+
+.banner-AU .textBox-AU .extra-content-AU {
+  font-size: 17px;
+}
+
+.banner-AU .bg-img-AU {
+  margin-left: 40px;
+  width: 100%;
+  height: 600px;
+  z-index: 2;
+}
+
+.banner-AU .bg-img-AU img {
+  opacity: 1;
+}
+
+.inner-section-AU {
+  top: 0;
+  left: 0;
+}
+
+.bg-AU {
+  background-image: url("../images/main-workers-bg.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+}
+
+.bg-AU::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(180deg, #fff, rgba(0, 0, 0, 0));
+  z-index: 3;
+  mix-blend-mode: screen;
+}
+
+/* 769px — 1024px: Small screens, laptops */
+
+/* @media (max-width: 1110px) {
+  .aboutUs-section-AU {
+    height: 1273px;
+  }
+  .banner-AU {
+    flex-wrap: wrap;
+    margin-top: 120px;
+  }
+  .banner-AU .textBox-AU {
+    position: relative;
+    max-width: 80%;
+    padding-left: 50px;
+  }
+
+  .banner-AU .textBox-AU h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+
+  .banner-AU .textBox-AU p {
+    font-size: 1.1em;
+    margin: 5px 0 25px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .aboutUs-section-AU {
+    height: 1273px;
+  }
+}
+
+@media (max-width: 997px) {
+  .aboutUs-section-AU {
+    height: 1282px;
+  }
+}
+
+@media (max-width: 946px) {
+  .aboutUs-section-AU {
+    height: 1308px;
+  }
+}
+@media (max-width: 900px) {
+  .aboutUs-section-AU {
+    height: 1334px;
+  }
+}
+@media (max-width: 855px) {
+  .aboutUs-section-AU {
+    height: 1360px;
+  }
+}
+@media (max-width: 825px) {
+  .aboutUs-section-AU {
+    height: 1386px;
+  }
+}
+@media (max-width: 794px) {
+  .aboutUs-section-AU {
+    height: 1412px;
+  }
+}
+@media (max-width: 776px) {
+  .aboutUs-section-AU {
+    height: 1438px;
+  }
+}
+@media (max-width: 769px) {
+  .aboutUs-section-AU {
+    display: none;
+  }
+} */

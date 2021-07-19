@@ -1,0 +1,137 @@
+.section-LG {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.div-LG {
+  display: flex;
+}
+
+.section-LG .img-box-LG {
+  position: relative;
+  width: 800px;
+  height: 100%;
+}
+
+.section-LG .img-box-LG::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(225deg, rgba(133, 220, 184, 0.568), #333);
+  z-index: 1;
+  mix-blend-mode: screen;
+}
+
+.section-LG .img-box-LG img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section-LG .form-box-LG {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+.section-LG .form-box-LG h2 {
+  color: #607d8b;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  border-bottom: 4px solid #85dcb8;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+.section-LG .form-box-LG .input-box-LG {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-box-LG h1 {
+  font-size: 35px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  letter-spacing: -1px;
+}
+
+.form-box-LG input {
+  min-width: 380px;
+  padding: 20px 0;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+  font-size: 15px;
+}
+
+.login-btn-LG {
+  min-width: 300px;
+  padding: 17px 30px;
+  margin-top: 20px;
+  background: black;
+  color: white;
+  border: none;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.login-btn-LG:hover {
+  background: #85dcb8;
+  color: #000;
+}
+
+/* 1025px — 1200px: Desktops, large screens */
+
+@media (max-width: 1200px) {
+  .section-LG .img-box-LG {
+    width: 500px;
+  }
+
+  .section-LG .form-box-LG {
+    margin-left: 50px;
+  }
+}
+
+/* 769px — 1024px: Small screens, laptops */
+
+@media (max-width: 940px) {
+  .section-LG .img-box-LG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .section-LG .form-box-LG {
+    margin-left: 200px;
+    margin-right: auto;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  .login-form-LG {
+    background: #fff;
+    padding: 50px 20px 20px 20px;
+    border-radius: 20px;
+  }
+
+  .section-LG .form-box-LG h2 {
+    color: #fff;
+  }
+}

@@ -1,0 +1,163 @@
+.slideproduct-section-SP {
+  margin-bottom: 100px;
+}
+
+.main-SP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.header-SP h1 {
+  color: #333;
+}
+
+.main-SP .card-SP {
+  position: relative;
+  width: 700px;
+  height: 440px;
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 3px;
+  background-color: #85dcb8;
+}
+
+.main-SP .card-SP::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.main-SP .card-SP img {
+  position: absolute;
+  max-width: 500px;
+  height: 500px;
+  bottom: -100px;
+  left: 20%;
+  padding: 0 0 150px 150px;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.main-SP .card-SP:hover img {
+  left: 60%;
+}
+
+.right-content-SP {
+  z-index: 1;
+  position: relative;
+  bottom: 30%;
+  right: 0%;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.5s;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.2em;
+  line-height: 1em;
+  max-width: 500px;
+  line-height: 40px;
+}
+
+.main-SP .card-SP:hover .right-content-SP {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.main-SP .card-SP .content-SP {
+  position: relative;
+  width: 50%;
+  left: 20%;
+  padding: 20px 20px 20px 40px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.main-SP .card-SP:hover .content-SP {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.main-SP .card-SP .content-SP h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  line-height: 1em;
+  max-width: 250px;
+}
+
+.main-SP .card-SP .content-SP a {
+  position: relative;
+  text-transform: uppercase;
+  color: #2f3840;
+  background: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.main-SP .card-SP .content-SP a:hover {
+  color: #2f3840;
+  background: #d2d5d9;
+}
+
+/* responsive */
+
+/* 1025px — 1200px: Desktops, large screens */
+
+@media (max-width: 1250px) {
+  .main-SP {
+    flex-wrap: wrap;
+  }
+}
+
+/* 481px — 768px: iPads, Tablets */
+
+@media (max-width: 600px) {
+  .right-content-SP {
+    bottom: 35%;
+    right: -3%;
+    font-size: 1.5em;
+    max-width: 100px;
+  }
+
+  .main-SP .card-SP img {
+    max-width: 450px;
+    left: 30%;
+  }
+}
+
+@media (max-width: 500px) {
+  .right-content-SP {
+    bottom: 35%;
+    right: 20%;
+    opacity: 1;
+    font-size: 1em;
+    line-height: 20px;
+    max-width: 100px;
+  }
+
+  .main-SP .card-SP img:hover {
+    opacity: 0;
+  }
+
+  .main-SP .card-SP .content-SP h3 {
+    text-transform: none;
+    font-size: 0.9em;
+  }
+
+  .main-SP .card-SP .content-SP {
+    width: 100%;
+  }
+}

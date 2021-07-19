@@ -1,0 +1,54 @@
+.footer-container-FT {
+  background-color: #0d0909;
+}
+
+.footer-wrap-FT {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.social-media-FT {
+  max-width: 1300px;
+  width: 100%;
+}
+
+.social-media-wrap-FT {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 16px auto 0 auto;
+
+  @media screen and (max-width: 820px) {
+    flex-direction: column;
+  }
+}
+
+.socialLogo-FT {
+  color: #fff;
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.socialIcons-FT {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+}
+
+.SocialIconLink-FT {
+  color: #fff;
+  font-size: 24px;
+}

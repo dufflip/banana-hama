@@ -1,0 +1,66 @@
+.section-CT {
+  color: #333;
+  background: #0000002f;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 280px;
+  z-index: 1;
+  overflow-x: hidden;
+  padding: 15px 15px 15px 25px;
+  border-radius: 10px 20px;
+  margin-bottom: 30px;
+}
+
+.section-CT.nav-menu-CT.div-CT h3 {
+  font-weight: 400;
+  font-size: 15px;
+  padding: 15px 0;
+}
+
+.section-CT.nav-menu-CT.div-CT button {
+  font-size: 1rem;
+  padding: 5px 10px;
+  margin: 10px 0;
+  border: none;
+  background: #85dcb8;
+  color: #333;
+  transition: 0.2 ease-out;
+}
+
+.section-CT.nav-menu-CT.div-CT button:hover {
+  background: #ffc500;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+  color: #333;
+}
+
+.menu-icon-CT {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-100%, 60%);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.nav-menu-CT {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  top: 80px;
+  left: -100%;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.nav-menu-CT:active {
+  background: #85dcb8;
+  top: 75px;
+  left: 0;
+  opacity: 1;
+  transition: all 0.5s ease;
+  z-index: 2;
+}
