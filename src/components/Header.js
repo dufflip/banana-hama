@@ -9,8 +9,6 @@ import { ACTION_logout } from "../store/ducks/login";
 import { AiOutlineMenu } from "react-icons/ai";
 import { GrClose } from "react-icons/gr";
 
-import "../css/header.css";
-
 const Header = () => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);

@@ -1,7 +1,5 @@
 import React from "react";
 
-import "../css/cloudUp.css";
-
 import cloud1 from "../images/cloud1.png";
 import cloud2 from "../images/cloud2.png";
 import cloud3 from "../images/cloud3.png";

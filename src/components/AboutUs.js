@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-import "../css/aboutUs.css";
 import CloudDown from "./CloudDown";
 
 import worker from "../images/main-workers.png";

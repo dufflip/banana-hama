@@ -1,7 +1,5 @@
 import React from "react";
 
-import "../css/shop.css";
-
 import { useDispatch } from "react-redux";
 import { ACTION_addToCart } from "../store/ducks/cart";
 

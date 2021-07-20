@@ -1,7 +1,5 @@
 import React from "react";
 
-import "../css/slideProducts.css";
-
 import whatsnewProducts from "./products/whatsnewProducts";
 
 const SlideProducts = () => {

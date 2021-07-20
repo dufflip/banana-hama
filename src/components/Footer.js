@@ -8,8 +8,6 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-import "../css/footer.css";
-
 const Footer = () => {
   return (
     <footer className="footer-container-FT">
