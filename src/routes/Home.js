@@ -6,10 +6,10 @@ import ImageSlider from "../components/ImageSlider";
 import SlideProducts from "../components/SlideProducts";
 import AboutUs from "../components/AboutUs";
 
-const Home = () => {
+const Home = ({ type }) => {
   return (
     <>
-      <ImageSlider />
+      <ImageSlider type={type} />
       <SlideProducts />
       <AboutUs />
     </>

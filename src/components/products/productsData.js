@@ -4,7 +4,7 @@ import mangoIMG from "../../images/main-mango.png";
 import pineAppleIMG from "../../images/main-pineApple.png";
 import watermelonIMG from "../../images/main-watermelon.png";
 
-export default [
+export const ProductsData = [
   {
     key: "apple",
     img: appleIMG,

@@ -17,7 +17,7 @@ export const Juice = [
     img: appelJuice,
     name: "Apple Juice",
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    price: "$9,59",
+    price: 9.59,
   },
   {
     id: 4,
@@ -25,7 +25,7 @@ export const Juice = [
     img: berrysJuice,
     name: "Berry Juice",
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    price: "$8,99",
+    price: 8.99,
   },
   {
     id: 5,
@@ -33,7 +33,7 @@ export const Juice = [
     img: carrotJuice,
     name: "Carrot Juice",
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    price: "$4,29",
+    price: 4.29,
   },
   {
     id: 7,
@@ -41,7 +41,7 @@ export const Juice = [
     img: kiwiSmoothie,
     name: "Kiwi Juice",
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    price: "$15,29",
+    price: 15.29,
   },
   {
     id: 8,
@@ -49,7 +49,7 @@ export const Juice = [
     img: limonade,
     name: "Limonade",
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    price: "$6,00",
+    price: 6.0,
   },
   {
     id: 9,
@@ -57,7 +57,7 @@ export const Juice = [
     img: orangeJuice,
     name: "Orange Juice",
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    price: "$10,99",
+    price: 10.99,
   },
   {
     id: 10,
@@ -65,7 +65,7 @@ export const Juice = [
     img: pineappleJuice,
     name: "Pineappel Juice",
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    price: "$6,29",
+    price: 6.29,
   },
   {
     id: 11,
@@ -73,7 +73,7 @@ export const Juice = [
     img: watermelonJuice,
     name: "Watermelon Juice",
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    price: "$4,99",
+    price: 4.99,
   },
 ];
 
@@ -84,7 +84,7 @@ export const Smoothie = [
     img: grapeSmoothie,
     name: "Grape Smoothie",
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    price: "$10,99",
+    price: 10.99,
   },
   {
     id: 2,
@@ -92,7 +92,7 @@ export const Smoothie = [
     img: avocadoSmoothie,
     name: "Avocado Smoothie",
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    price: "$9,59",
+    price: 9.59,
   },
   {
     id: 3,
@@ -100,6 +100,6 @@ export const Smoothie = [
     img: bananaSmoothie,
     name: "Banana Smoothie",
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    price: "$11,69",
+    price: 11.69,
   },
 ];

@@ -1,6 +1,6 @@
 .section-CT {
   color: #333;
-  background: #0000002f;
+  background: #f1f1f1ee;
   position: fixed;
   bottom: 0px;
   left: 0px;
@@ -35,6 +35,24 @@
   color: #333;
 }
 
+.section-CT h3 {
+  margin: 10px 0 15px 0;
+}
+
+.section-CT .button-CT {
+  background: #85dcb8a9;
+  color: #333;
+  border: none;
+  transition: 0.2 ease-out;
+  padding: 5px 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.section-CT .button-CT:hover {
+  transition: 0.2s ease-out;
+  background: #85dcb8;
+}
 .menu-icon-CT {
   position: absolute;
   top: 0;

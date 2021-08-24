@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-import Header from "./Header";
 import CloudUp from "./CloudUp";
 
 import "../css/imageSlider.css";
@@ -9,11 +8,26 @@ import faceIcon from "../images/icon-facebook.png";
 import instagramIcon from "../images/icon-instagram.png";
 import twitterIcon from "../images/icon-twitter.png";
 
-import { useState } from "react";
-import productsData from "./products/productsData";
+// import productsData from "./products/productsData";
 
-const ImageSlider = () => {
-  const [state, setState] = useState(productsData[0]);
+import { API_storeII } from "../fake-api/api";
+
+const ImageSlider = ({ type }) => {
+  const [state, setState] = useState({
+    products: [],
+    loading: true,
+    error: false,
+  });
+
+  const updateState = (updates) =>
+    setState((state) => ({ ...state, ...updates }));
+
+  useEffect(() => {
+    API_storeII(type).then((products) =>
+      updateState({ products, loading: false })
+    );
+  }, []);
+  // const [state, setState] = useState(productsData[0]);
 
   return (
     <div className="section-IS">
@@ -35,18 +49,22 @@ const ImageSlider = () => {
           <img src={state.img} className="fruits" />
         </div>
       </section>
-      <ul className="thumb-IS">
-        {productsData.map((product) => (
-          <li
-            key={product.key}
-            data-text={product.name}
-            onClick={() => setState(product)}
-            className={product.key === state.key ? "check active" : "check"}
-          >
-            <img src={product.img} />
-          </li>
-        ))}
-      </ul>
+      {state.loading ? (
+        "Carregando..."
+      ) : (
+        <ul className="thumb-IS">
+          {state.products.map((product) => (
+            <li
+              key={product.key}
+              data-text={product.name}
+              onClick={() => setState(product)}
+              className={product.key === state.key ? "check active" : "check"}
+            >
+              <img src={product.img} />
+            </li>
+          ))}
+        </ul>
+      )}
       <ul className="social-IS">
         <li>
           <a href="#">

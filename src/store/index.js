@@ -7,7 +7,7 @@ import storage from "redux-persist/lib/storage";
  * Importa os reducers
  */
 import login from "./ducks/login";
-import cart from "./ducks/cart";
+import cart from "./ducks/cartCEP";
 
 const persistConfig = {
   key: "root",

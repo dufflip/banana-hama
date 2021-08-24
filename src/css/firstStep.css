@@ -1,0 +1,77 @@
+.container-FS {
+  margin-top: 150px;
+}
+
+.container-FS .stages-FS {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.container-FS .stages-FS li {
+  padding: 15px 100px;
+  list-style: none;
+  font-size: 20px;
+}
+
+.container-FS .stages-FS .stage-FS {
+  color: #fff;
+  background-color: #85dcb8;
+  border-bottom-left-radius: 15px;
+}
+
+.section-FS {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-FS .div-FS {
+  padding: 50px;
+}
+
+.section-FS .div-FS h2 {
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.section-FS .div-FS h3,
+.section-FS .div-FS p {
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.section-FS .div-FS h3 div {
+  /* margin-bottom: 25px; */
+}
+
+.section-FS .div-FS .button-FS {
+  color: #fff;
+  background: #85dcb8a9;
+  border-radius: 20px;
+  border: none;
+  padding: 5px 20px;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.section-FS .div-FS .button-FS:hover {
+  transition: 0.2s ease-out;
+  background: #85dcb8;
+}
+
+.delete-button-FS {
+  border: none;
+  background: rgb(209, 38, 38);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 35px;
+}
+
+.delete-button-FS:hover {
+  background: rgb(160, 23, 23);
+}

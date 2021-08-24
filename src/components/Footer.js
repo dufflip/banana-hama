@@ -50,9 +50,6 @@ const Footer = () => {
               >
                 <FaTwitter />
               </a>
-              <socialIconLink href="/" target="_blank" aria-label="Linkedin">
-                <FaLinkedin />
-              </socialIconLink>
             </div>
           </div>
         </section>

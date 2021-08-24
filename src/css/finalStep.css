@@ -1,0 +1,12 @@
+.section-final-step {
+  text-align: center;
+  padding-top: 200px;
+}
+
+.cart-final-step .section-FS .div-FS h2 {
+  display: none;
+}
+
+.cart-final-step .section-FS .delete-button-FS {
+  display: none;
+}

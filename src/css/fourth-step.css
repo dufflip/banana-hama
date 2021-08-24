@@ -1,0 +1,82 @@
+.stage-FTS {
+  color: #fff;
+  background-color: #85dcb8;
+  border-top-right-radius: 15px;
+}
+
+.table-FTS {
+  /* text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; */
+}
+
+.cupom-FTS {
+  padding: 15px 0 50px 0;
+  text-align: center;
+}
+
+.cupom-FTS h2 {
+  font-weight: 500;
+}
+
+.cupom-FTS ul {
+  padding-top: 25px;
+  list-style-type: none;
+}
+
+.cupom-FTS ul svg {
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+}
+
+.section-FTS {
+  position: relative;
+  padding: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-left: 325px;
+}
+
+.section-FTS h3 {
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+.form-FTS .form-check {
+  padding: 15px;
+}
+
+.form-FTS .form-check label input {
+  margin-right: 15px;
+}
+
+.icons-FTS {
+  margin-right: 5px;
+}
+
+.form-group {
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  padding-top: 25px;
+  padding-bottom: 100px;
+}
+
+.products-FTS {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  background: rgba(236, 236, 236, 0.185);
+  border-radius: 20px;
+}
+
+.products-FTS .button-FS {
+  display: none;
+}
+
+.products-FTS .section-FS {
+  margin-bottom: unset;
+}
