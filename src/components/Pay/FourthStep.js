@@ -8,10 +8,10 @@ import {
   FaMoneyCheck as Debit,
   FaMoneyBillWave as Transfer,
 } from "react-icons/fa";
-import { MdMoneyOff as Coupom } from "react-icons/md";
 
 import "../../css/fourth-step.css";
 import { Link } from "react-router-dom";
+import CouponForm from "../CouponForm";
 
 class FourthStep extends Component {
   constructor(props) {
@@ -47,12 +47,7 @@ class FourthStep extends Component {
         <section className="table-FTS">
           <div className="cupom-FTS">
             <h2>Tem algum cupom?</h2>
-            <ul>
-              <li>
-                <Coupom />
-                <input type="text" />
-              </li>
-            </ul>
+            <CouponForm />
           </div>
           <div className="section-FTS">
             <h3>Escolha seu metodo de pagamento:</h3>

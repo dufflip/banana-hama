@@ -1,6 +1,21 @@
 import { Juice, Smoothie } from "../components/products/productsStoreData";
 import { ProductsData } from "../components/products/productsData";
 
+const validCoupons = [
+  {
+    label: "10off",
+    discount: 10,
+  },
+  {
+    label: "20off",
+    discount: 20,
+  },
+  {
+    label: "30off",
+    discount: 30,
+  },
+];
+
 /**
  * ImageSlider - data
  */
@@ -44,4 +59,16 @@ const API_login = (login) =>
     }, 1000);
   });
 
-export { API_login, API_store, API_storeII };
+/** Simulação Cupom */
+const API_validateCoupon = (input) =>
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const coupon = validCoupons.find((item) => item.label === input);
+      if (coupon) {
+        return resolve(coupon);
+      }
+      reject("Cupom Inválido!");
+    }, 1000);
+  });
+
+export { API_login, API_store, API_storeII, API_validateCoupon };

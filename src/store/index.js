@@ -18,7 +18,10 @@ const reducers = combineReducers({ login, cart });
 
 const persistedReducer = persistReducer(persistConfig, reducers);
 
-let store = createStore(persistedReducer);
+let store = createStore(
+  persistedReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 let persistor = persistStore(store);
 
 export default { store, persistor };

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import { useDispatch } from "react-redux";
 
@@ -78,23 +78,29 @@ const Header = () => {
         {/* final */}
         <ul className="navigation-HD">
           <li>
-            <Link to="/" className="active-HD">
+            <NavLink to="/" exact activeClassName="active-HD">
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/shop">Shop</Link>
+            <NavLink to="/shop" activeClassName="active-HD">
+              Shop
+            </NavLink>
           </li>
           <li>
-            <Link to="/slide-poducts">What's New</Link>
+            <NavLink to="/slide-poducts" activeClassName="active-HD">
+              What's New
+            </NavLink>
           </li>
           <li>
-            <Link to="/about-us">About Us</Link>
+            <NavLink to="/about-us" activeClassName="active-HD">
+              About Us
+            </NavLink>
           </li>
           <li>
-            <Link to="/" onClick={() => dispatch(ACTION_logout())}>
+            <NavLink to="/" onClick={() => dispatch(ACTION_logout())}>
               Logout
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </header>

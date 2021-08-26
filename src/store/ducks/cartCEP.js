@@ -1,3 +1,5 @@
+import { v4 as uuid } from "uuid";
+
 /**
  * CONSTANTES
  */
@@ -9,10 +11,16 @@ const ADD_FATURAMENTO = "ADD_FATURAMENTO";
 const ADD_LOCAL_ENVIO = "ADD_LOCAL_ENVIO";
 const CART_REMOVE = "CART_REMOVE";
 
+const ADD_COUPON = "ADD_COUPON";
+const REMOVE_COUPON = "REMOVE_COUPON";
+
 /**
  * ACTIONS
  */
-export const ACTION_addToCart = (product) => ({ type: ADD_TO_CART, product });
+export const ACTION_addToCart = (product) => ({
+  type: ADD_TO_CART,
+  product: { ...product, uuid: uuid() },
+});
 export const ACTION_checkout = () => ({ type: CHECKOUT });
 export const ACTION_faturamento = (endereco) => ({
   type: ADD_FATURAMENTO,
@@ -22,7 +30,10 @@ export const ACTION_envios = (endereco) => ({
   type: ADD_LOCAL_ENVIO,
   endereco,
 });
-export const ACTION_cart_remove = (id) => ({ type: CART_REMOVE, id });
+export const ACTION_cart_remove = (uuid) => ({ type: CART_REMOVE, uuid });
+
+export const ACTION_addCoupon = (coupon) => ({ type: ADD_COUPON, coupon });
+export const ACTION_removeCoupon = () => ({ type: REMOVE_COUPON });
 
 /**
  * INITIAL_STATE
@@ -31,6 +42,7 @@ const INITIAL_STATE = {
   products: [],
   faturamento: { cep: "", logradouro: "", bairro: "", localidade: "", uf: "" },
   envio: { cep: "", logradouro: "", bairro: "", localidade: "", uf: "" },
+  coupon: {},
 };
 
 /**
@@ -52,7 +64,17 @@ function cart(state = INITIAL_STATE, action) {
     case CART_REMOVE:
       return {
         ...state,
-        products: state.products.filter((value) => value.id !== action.id),
+        products: state.products.filter((value) => value.uuid !== action.uuid),
+      };
+    case ADD_COUPON:
+      return {
+        ...state,
+        coupon: action.coupon,
+      };
+    case REMOVE_COUPON:
+      return {
+        ...state,
+        coupon: {},
       };
     default:
       return state;
